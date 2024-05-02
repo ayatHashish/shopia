@@ -1,0 +1,110 @@
+
+  
+  .wrapper {
+    width:70%;
+    margin:auto;
+   
+    &__cart {
+      overflow:hidden;
+      width:17%;
+      font-size:20px;
+      position:absolute;
+      top:30px;
+      right:60px;
+      background-color:rgba(256,256,256,0.5);
+      border-radius:10px;
+      color:rgba(0,0,0,0.6);
+      box-shadow: 0px 5px 10px rgba(50, 88, 130, 0.32);
+    } 
+    
+    &__icon {
+        background-color:white;
+        padding:15px;
+        margin-right:10px;
+          
+        &--shop {      
+        color:blue;
+        }
+      
+        &--wish {
+          color:red;
+      }
+   }
+    
+  
+     &__title {
+      color: #5C7CFA;
+      padding:80px 0 30px;
+      font-weight:500;
+      font-size:40px;
+      border-bottom:1px solid lightgray;
+    }
+    
+    &__col {
+      display:flex;
+      justify-content:space-between;
+      padding:80px 0;
+    } 
+  }
+  
+   .buy, .fav {
+      display:none;
+    }
+  
+  .column {
+    width:30%;
+    box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color:white;
+    height:100%;
+    transition: transform .2s linear;
+    position:relative;
+    &__icon {
+       position: absolute;
+      right: 15px;
+      top: 15px;
+      color:#989898;
+      font-size:35px;
+       transition: all 1s ease-in-out;
+  
+      &:hover {
+        color:red;
+      }
+    }    
+
+    &__link {
+      text-decoration:none;
+      color: rgba(1,0,0,0);//istead 'transparent'
+      height:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-bottom:1px solid lightgray;
+      transition: all .5s ease-in-out;
+      &:hover {
+        text-decoration:underline;
+        }
+    }
+    
+    &__image {
+      display:block;
+      width:100%;
+    }
+    
+  
+    &__title {
+      text-align:center;
+      padding:20px 0;
+      font-weight:500;
+      font-size:25px;
+    }
+  
+    &:hover {
+      transform:scale(1.02);
+        a {
+          height:60px;
+          color:blue;
+       }
+      }
+    }

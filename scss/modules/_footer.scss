@@ -1,0 +1,97 @@
+/* footer start */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -200px; /* Adjust this value to control the space below the footer */
+    text-align: center;
+  }
+  
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin-top: 40px;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .footer-logo {
+    text-align: right;
+    margin-left: 70px;
+    padding-bottom: 70px;
+  }
+  
+  .footer-logo img {
+    width: 400px;
+  }
+  
+  .social-icons,
+  .payment-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin-left: 10px;
+  }
+  
+  .social-icons i,
+  .payment-icons i {
+    font-size: 24px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      margin-bottom: 20px;
+    }
+  
+    .footer-logo {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .footer-logo img {
+      margin: 0;
+    }
+  
+    .social-icons,
+    .payment-icons {
+      flex-direction: column;
+    }
+  
+    .social-icons a,
+    .payment-icons a {
+      margin: 10px 0;
+    }
+  
+    .payment-icons span {
+      margin-right: 5px; /* Reduce margin between payment label and icon */
+    }
+  }
+  /*footer end*/
