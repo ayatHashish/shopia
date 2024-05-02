@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333333;
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+#flip-scroll table {
+    max-width: 100%;
+    width:100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#flip-scroll .table-bordered {
+    /*border: 1px solid #ddd;*/
+    border-collapse: separate;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#flip-scroll thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+#flip-scroll tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+#flip-scroll td {
+    text-align: center;
+}
+#flip-scroll .table-bordered thead:first-child tr:first-child th:first-child,
+#flip-scroll .table-bordered tbody:first-child tr:first-child td:first-child {
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
+}
+#flip-scroll .table-bordered thead:first-child tr:first-child th,
+#flip-scroll .table-bordered tbody:first-child tr:first-child th,
+#flip-scroll .table-bordered tbody:first-child tr:first-child td {border-top: 0;}
+
+#flip-scroll .table-bordered th+th,
+#flip-scroll .table-bordered td+td,
+#flip-scroll .table-bordered th+td,
+#flip-scroll .table-bordered td+th {/*border-left: 1px solid #ddd;*/}
+
+#flip-scroll .table-striped tbody tr:nth-child(odd) td,
+#flip-scroll .table-striped tbody tr:nth-child(odd) th {background-color: #f9f9f9;}
+
+#flip-scroll .table-condensed th,
+#flip-scroll .table-condensed td {padding: 4px 5px;}
+#flip-scroll td, .flip-scroll th {
+    text-align: center;
+    white-space: nowrap;
+}
+/*#flip-scroll .chart.chart--size {position:absolute;}*/
+
+@media only screen and (max-width: 600px) {
+	
+	#flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+	#flip-scroll * html .cf { zoom: 1; }
+	#flip-scroll *:first-child+html .cf { zoom: 1; }
+	
+	#flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+ 
+	#flip-scroll th,
+	#flip-scroll td { margin: 0; vertical-align: top;}
+	#flip-scroll th { text-align: center; }
+	
+	#flip-scroll table { /*display: block;*/ position: relative; width: 100%; }
+	#flip-scroll thead { display: block; float: left; }
+	#flip-scroll tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+	#flip-scroll thead tr { display: block; }
+	#flip-scroll th { display: block; text-align: right; }
+	#flip-scroll tbody tr { display: inline-block; vertical-align: top; }
+	#flip-scroll td { display: block; min-height: 1.75em; min-width:5em;}
+ 
+	/* sort out borders */
+ 
+	#flip-scroll th { border-bottom: 0; border-left: 0; }
+	#flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
+  #flip-scroll .chart tbody tr {border:none;}
+	/*#flip-scroll tbody tr { border-left: 1px solid #babcbf; }*/
+}
