@@ -9,7 +9,6 @@
 *
 * Copyright (c) 2020 Animate.css
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 :root {
   --animate-duration:1s;
@@ -4107,53 +4106,38 @@ header {
 .footer {
   background-color: black;
   color: white;
-  padding: 20px;
-  margin-top: 20px; }
-
-.footer-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -200px;
-  /* Adjust this value to control the space below the footer */
-  text-align: center; }
-
-.footer-top {
-  display: flex;
-  justify-content: space-between; }
-
-.footer-column {
-  flex: 1;
-  margin-top: 40px; }
-
-.footer-column a {
-  display: block;
-  color: white;
-  margin-bottom: 10px;
-  text-decoration: none;
-  margin-right: 10px; }
-
-.footer-logo {
-  text-align: right;
-  margin-left: 70px;
-  padding-bottom: 70px; }
-
-.footer-logo img {
-  width: 400px; }
-
-.social-icons,
-.payment-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px; }
-
-.social-icons a {
-  margin-left: 10px; }
-
-.social-icons i,
-.payment-icons i {
-  font-size: 24px; }
+  padding: 0 20px; }
+  .footer .footer-top {
+    display: flex;
+    justify-content: space-between; }
+    .footer .footer-top .footer-column {
+      flex: 1;
+      margin-top: 40px; }
+      .footer .footer-top .footer-column a {
+        display: block;
+        color: white;
+        margin-bottom: 10px;
+        text-decoration: none;
+        margin-right: 10px; }
+  .footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -200px;
+    /* Adjust this value to control the space below the footer */
+    text-align: center; }
+    .footer .footer-bottom .social-icons,
+    .footer .footer-bottom .payment-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px; }
+      .footer .footer-bottom .social-icons a,
+      .footer .footer-bottom .payment-icons a {
+        margin-left: 10px; }
+      .footer .footer-bottom .social-icons i,
+      .footer .footer-bottom .payment-icons i {
+        font-size: 24px; }
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
@@ -4542,11 +4526,6 @@ overflow: hidden; */ }
   transition: all 0.3s ease-out;
   display: none; }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif; }
-
-/*first block start*/
 .container0 {
   display: flex;
   justify-content: space-between;
@@ -4554,10 +4533,6 @@ body {
   height: 50px;
   background-color: blue;
   padding: 0 20px; }
-
-.logo img {
-  max-width: 300px;
-  max-height: 300px; }
 
 .middle-image {
   max-width: 250%;
@@ -4609,18 +4584,6 @@ body {
 
   .vertical-line {
     display: none; } }
-/*first block end */
-/*navbar start*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #025677;
-  color: #fff; }
-
 .container {
   padding: 30px 50px; }
 
@@ -4669,10 +4632,6 @@ body {
   .info {
     font-size: 0.5rem; } }
 /*navbar end*/
-/* circles start*/
-* {
-  box-sizing: border-box; }
-
 .carousel-cell {
   height: 150px;
   width: 150px;
@@ -4700,14 +4659,6 @@ span {
   margin-left: 50px; }
 
 /* circles end*/
-/* squares start*/
-* {
-  box-sizing: border-box; }
-
-body {
-  font-family: "Poppins", sans-serif;
-  color: #444444; }
-
 a,
 a:hover {
   text-decoration: none;
@@ -5581,15 +5532,6 @@ button[type="submit"]:hover {
 .checkbox label {
   display: inline;
   margin: 0; }
-
-body {
-  margin: 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  color: #333333;
-  background-color: #fff;
-  padding: 20px; }
 
 #flip-scroll table {
   max-width: 100%;
