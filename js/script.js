@@ -169,3 +169,12 @@ $(document).ready(function () {
         nav.classList.toggle("trans")
     })
     close.addEventListener("click", function () { nav.classList.toggle("trans") })
+
+
+
+
+
+
+
+
+    

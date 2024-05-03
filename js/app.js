@@ -81,3 +81,26 @@ function generateResponse(msg) {
       document.getElementById("chatbot_toggle").children[1].style.display = "none";
     }
   };
+
+
+
+
+  //  addToFavorites
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var addToFavoritesButtons = document.querySelectorAll('.add-to-favorites');
+    addToFavoritesButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            var productTitle = this.closest('.single-product').querySelector('.product-title').textContent;
+            var productPrice = this.closest('.single-product').querySelector('.product-price').textContent;
+            addToFavorites(productTitle, productPrice);
+        });
+    });
+
+    function addToFavorites(title, price) {
+        // You can implement your logic to add the product to the favorites list here
+        // For example, you can store the product information in localStorage or send it to the server via AJAX
+        console.log("Added to favorites: " + title + " - " + price);
+    }
+});

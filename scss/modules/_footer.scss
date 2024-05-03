@@ -6,9 +6,6 @@
 
 
   .footer-top {
-    display: flex;
-    justify-content: space-between;
-
  .footer-column {
     flex: 1;
     margin-top: 40px;
@@ -24,12 +21,11 @@ a {
 
   }
     .footer-logo {
-    // text-align: right;
-    // margin-left: 70px;
-    // padding-bottom: 70px; 
+      width: 200px;
+      height: 100%;
     
     img {
-    // width: 400px;
+ width: 100%;
   }
   }
 
@@ -37,11 +33,11 @@ a {
   }
   
  .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -200px; /* Adjust this value to control the space below the footer */
-    text-align: center; 
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // margin-top: -200px; /* Adjust this value to control the space below the footer */
+    // text-align: center; 
 
 
 
