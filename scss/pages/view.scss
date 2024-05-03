@@ -342,10 +342,7 @@ button:hover {
 
 
 @media (max-width: 850px) {
-  body {
-    background:#fff;
-    overflow:auto;
-  }
+
   h1 {
     font-size:2rem;
   }
@@ -407,10 +404,6 @@ button:hover {
 @media (max-width: 550px) {
   .highlight-window {
     display:none;
-  }
-  body {
-    overflow:auto;
-    height:auto;
   }
   .highlight-window.mobile {
     position:relative;
