@@ -9,7 +9,6 @@
 *
 * Copyright (c) 2020 Animate.css
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 :root {
   --animate-duration:1s;
   --animate-delay:1s;
@@ -3894,58 +3893,6 @@
   height: 100%;
   width: 100%; }
 
-.breadcrumbs-wrapper {
-  margin-top: 40px; }
-  .breadcrumbs-wrapper .breadcrumb {
-    width: 100%;
-    position: relative; }
-    .breadcrumbs-wrapper .breadcrumb li {
-      margin-right: 15px; }
-      .breadcrumbs-wrapper .breadcrumb li a {
-        color: #000000;
-        font-size: 0.9375em;
-        position: relative;
-        display: flex;
-        align-items: center;
-        position: relative;
-        gap: 5px;
-        text-decoration: none;
-        /* color: $pure-white; */
-        cursor: pointer; }
-        .breadcrumbs-wrapper .breadcrumb li a::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: -2px;
-          width: 0;
-          height: 2px;
-          background: #26537B;
-          transition-duration: 300ms; }
-        .breadcrumbs-wrapper .breadcrumb li a::before {
-          content: "\e910";
-          position: absolute;
-          right: -10px;
-          top: 71%;
-          color: #afafaf;
-          transform: translateY(-50%);
-          font-size: 0.75em;
-          font-family: "fiicons";
-          font-family: "fiicons"; }
-        .breadcrumbs-wrapper .breadcrumb li a.deactivate {
-          color: #a3c891;
-          cursor: default; }
-          .breadcrumbs-wrapper .breadcrumb li a.deactivate:hover::after {
-            display: none; }
-        .breadcrumbs-wrapper .breadcrumb li a:hover::after {
-          width: 100%; }
-      .breadcrumbs-wrapper .breadcrumb li:last-child {
-        margin-right: 0px; }
-        .breadcrumbs-wrapper .breadcrumb li:last-child a::before {
-          display: none; }
-
-@media screen and (max-width: 767px) {
-  .breadcrumbs-wrapper .breadcrumb li a {
-    font-size: 0.875rem; } }
 header {
   background-color: #ffffff; }
   header .header-section {
@@ -4167,44 +4114,6 @@ header {
     margin-right: 5px;
     /* Reduce margin between payment label and icon */ } }
 /*footer end*/
-footer .footer-copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  color: #afafaf;
-  font-size: 18px; }
-  footer .footer-copyright a i {
-    color: #26537B; }
-  footer .footer-copyright .social-media a {
-    transition: all ease-in-out 0.3s; }
-    footer .footer-copyright .social-media a:first-child {
-      padding-left: 0; }
-    footer .footer-copyright .social-media a:hover {
-      transform: scale(1.1); }
-  footer .footer-copyright .telephone {
-    text-align: center; }
-    footer .footer-copyright .telephone a {
-      transition: all ease-in-out 0.3s; }
-      footer .footer-copyright .telephone a i {
-        display: inline-block; }
-      footer .footer-copyright .telephone a p {
-        display: inline-block;
-        color: #afafaf !important; }
-        footer .footer-copyright .telephone a p:hover {
-          transform: scale(1.1);
-          margin: 0 10px; }
-
-@media screen and (max-width: 769px) {
-  footer .footer-copyright .copyright {
-    font-size: 12px; }
-  footer .footer-copyright .social-media {
-    text-align: center !important; } }
-@media screen and (max-width: 580px) {
-  footer .footer-copyright {
-    text-align: center;
-    font-size: 14px; }
-    footer .footer-copyright .copyright p {
-      margin-bottom: 0 !important; } }
 .main-banner {
   padding-top: 0;
     /*     .banner-slide {
@@ -4659,6 +4568,14 @@ span {
   margin-left: 50px; }
 
 /* circles end*/
+/* squares start*/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444; }
+
 a,
 a:hover {
   text-decoration: none;
@@ -5383,13 +5300,6 @@ body0 {
     .about-page .vision-wrap .core-values-item .value-box .content-box,
     .about-page .core-values-wrap .core-values-item .value-box .content-box {
       padding-top: 33px; } }
-* {
-  box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: sans-serif; }
-
 a {
   color: #666;
   font-size: 14px;
@@ -5742,17 +5652,8 @@ button[type="submit"]:hover {
       height: 60px;
       color: blue; }
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
 i {
   color: #00cffb; }
-
-body {
-  font-family: 'Roboto', sans-serif; }
 
 .container {
   width: 900px;
