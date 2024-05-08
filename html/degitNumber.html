@@ -16,27 +16,20 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="content">
-                    <h2 class="login-title">Login</h2>
-                    <p class="notice">Please login to access the system</p>
+                    <h2 class="login-title">Verify your email</h2>
+            
+                    <p class="notice">Please login to access the system</p>  
                     <form class="form-login" id="login-form" action="http://localhost:5000/auth/login" method="post">
-                        <label for="email">E-mail</label>
-                        <div class="customInput">
-                            <i class="fa fa-envelope icon"></i>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your e-mail" required>
-                        </div>
-                        <label for="password">Password</label>
                         <div class="customInput">
                             <i class="fa fa-lock icon"></i>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required>
+                            <input type="text" name="digit" id="digit" class="form-control" placeholder="Enter your 6 digit" required>
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" name="remember" id="remember" class="form-check-input">
-                            <label class="form-check-label" for="remember">Remember me</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btnCustom "><i class="fa fa-door-open"></i> Login</button>
+                     
+                       
+                        <button type="submit" class="btn btn-primary btnCustom "><i class="fa fa-door-open"></i> Verify your email</button>
                     </form>
-                    <a href="forgetpass.html">Forgot your password?</a>
-                    <a href="signup.html">Create your new account</a>
+                    <a href="forgetpass.html">Go to New password?</a>
+                    
                 </div>
             </div>
             <div class="col-md-8">
